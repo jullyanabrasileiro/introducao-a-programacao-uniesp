@@ -13,19 +13,23 @@ dic = {}
 tupla =()
 '''
 
-print ('CONTROLE DE FUNCIONÁRIOS')
+
 
 lista_de_cadastro = []
 opcao = 1
 
+print ('CONTROLE DE FUNCIONÁRIOS')
+
 while opcao !=0:
-    print('O que você deseja fazer?')
-    print('1 - Incluir funcionário')
-    print('2 - Alterar funcionário')
-    print('3 - Listar funcionários')
-    print('4 - Remover funcionário')
-    print('5 - Aumento de salário')
-    print('6 - Sair')
+
+    print('''O que você deseja fazer?\n
+    1 - Incluir funcionário
+    2 - Alterar funcionário
+    3 - Listar funcionários
+    4 - Remover funcionário
+    5 - Aumento de salário
+    6 - Sair''')
+
     opcao = int(input("Escolha uma opção:"))
 
     if opcao == 1:
@@ -55,5 +59,5 @@ while opcao !=0:
         if lista_de_cadastro is not None: 
             print('LISTAGEM DE FUNCIONÁRIOS \n')
             for funcionario in lista_de_cadastro:
-                print(lista_de_cadastro, end=' ')
+                print(lista_de_cadastro, end=', ')
     
