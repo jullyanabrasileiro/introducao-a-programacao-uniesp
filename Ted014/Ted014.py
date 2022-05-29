@@ -53,6 +53,9 @@ while opcao !=0:
         lista_de_cadastro.append(pessoa)
 
         print('Funcionário Cadastrado')
+
+    if opcao == 2:
+        print('ALTERAÇÃO DE FUNCIONÁRIO')
     
     if opcao == 3:
 
@@ -69,6 +72,10 @@ while opcao !=0:
         removerfunc = input('Digite o código do funcionário: ')
         lista_de_cadastro.pop(removerfunc)
         print('Funcionário removido')
+
+    if opcao == 5:
+        print('ALTERAÇÃO DE SALÁRIO')
+        
 
     elif opcao == 6:
         print('Programa encerrado!')
