@@ -13,8 +13,6 @@ dic = {}
 tupla =()
 '''
 
-
-
 lista_de_cadastro = []
 opcao = 1
 
@@ -50,6 +48,8 @@ while opcao !=0:
         pessoa.append(salario)
 
         lista_de_cadastro.append(pessoa)
+
+        print('Funcionário Cadastrado')
     
     if opcao == 3:
 
