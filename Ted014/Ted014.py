@@ -8,37 +8,52 @@
 
 Sabendo que todos os funcionários cadastrados precisam ter no mínimo os dados: Código do Funcionário, Nome, E-mail, Data de Admissão e Salário. '''
 
+''' Lista = []
+dic = {}
+tupla =()
+'''
+
 print ('CONTROLE DE FUNCIONÁRIOS')
 
-lista_de_funcionarios = list()
-funcionario = dict()
+lista_de_cadastro = []
+opcao = 1
 
-print(''''O que você deseja fazer?
+while opcao !=0:
+    print('O que você deseja fazer?')
+    print('1 - Incluir funcionário')
+    print('2 - Alterar funcionário')
+    print('3 - Listar funcionários')
+    print('4 - Remover funcionário')
+    print('5 - Aumento de salário')
+    print('6 - Sair')
+    opcao = int(input("Escolha uma opção:"))
 
-[ 1 ] - Incluir funcionário
-[ 2 ] - Alterar funcionário
-[ 3 ] - Listar funcionários
-[ 4 ] - Remover funcionário
-[ 5 ] - Listar todos os funcionários
-[ 6 ] - Sair''')
+    if opcao == 1:
+        print('INCLUSÃO DE FUNCIONÁRIO:')
 
-opcao = input("Escolha uma opção:")
+        pessoa = []
 
-if opcao == "1":
-    print('INCLUSÃO DE FUNCIONÁRIO:')
-    funcionario['nome'] = str(input('Nome: '))
-    funcionario['CPF'] = int(input('CPF: '))
-    funcionario['email'] = str(input('Email: '))
-    funcionario['admissão'] = str(input('Data de admissão (dd/mm/aa/): '))
-    funcionario['salário'] = float(input('Salário: '))
+        nome = (input('Nome do funcionário: '))
+        pessoa.append(nome)
 
-    funcionario ['nome', 'CPF', 'email', 'admissão', 'salário'] = lista_de_funcionarios[:]
-    lista_de_funcionarios.append(funcionario)
+        email = (input('E-mail:'))
+        pessoa.append(email)
+
+        datainicio = str(input('Digite a data de admissão (00/00/00)'))
+        pessoa.append(datainicio)
+
+        salario = float(input('Salário do funcionário em R$: '))
+        pessoa.append(salario)
+
+        lista_de_cadastro.append(pessoa)
     
-elif opcao == 2:
+    if opcao == 3:
 
-elif opcao == 3:
-    for k, v in funcionario.items():
-        print(f'{k}:{v}')   
+        if lista_de_cadastro is None:
+            print('Nenhum funcionário cadastrado!')   
 
-
+        if lista_de_cadastro is not None: 
+            print('LISTAGEM DE FUNCIONÁRIOS \n')
+            for funcionario in lista_de_cadastro:
+                print(lista_de_cadastro, end=' ')
+    
