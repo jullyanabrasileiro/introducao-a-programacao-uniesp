@@ -56,10 +56,10 @@ while opcao !=0:
     
     if opcao == 3:
 
-        if lista_de_cadastro is None:
+        if lista_de_cadastro == []:
             print('Nenhum funcionário cadastrado!')   
 
-        if lista_de_cadastro is not None: 
+        else:
             print('LISTAGEM DE FUNCIONÁRIOS \n')
             for funcionario in lista_de_cadastro:
                 print(lista_de_cadastro, end=', ')
