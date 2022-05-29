@@ -35,10 +35,13 @@ while opcao !=0:
 
         pessoa = []
 
-        nome = (input('Nome do funcionário: '))
+        codigo = input('Código do funcionário: ')
+        pessoa.append(codigo)
+
+        nome = input('Nome do funcionário: ')
         pessoa.append(nome)
 
-        email = (input('E-mail:'))
+        email = input('E-mail:')
         pessoa.append(email)
 
         datainicio = str(input('Digite a data de admissão (00/00/00)'))
@@ -62,7 +65,9 @@ while opcao !=0:
                 print(lista_de_cadastro, end=', ')
             
     if opcao == 4:
-        lista_de_cadastro.remove()
+        print('DESLIGAMENTO DE FUNCIONÁRIO')
+        removerfunc = input('Digite o código do funcionário: ')
+        lista_de_cadastro.pop(removerfunc)
         print('Funcionário removido')
 
     elif opcao == 6:
@@ -70,4 +75,4 @@ while opcao !=0:
         break
 
     else:
-        print('Insira apena sos npumero do MENU.')
+        print('Insira apenas os números do MENU.')
