@@ -60,4 +60,14 @@ while opcao !=0:
             print('LISTAGEM DE FUNCIONÁRIOS \n')
             for funcionario in lista_de_cadastro:
                 print(lista_de_cadastro, end=', ')
-    
+            
+    if opcao == 4:
+        lista_de_cadastro.remove()
+        print('Funcionário removido')
+
+    elif opcao == 6:
+        print('Programa encerrado!')
+        break
+
+    else:
+        print('Insira apena sos npumero do MENU.')
